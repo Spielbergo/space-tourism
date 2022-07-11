@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     height: 100vh;  
-    background-image: url('/assets/images/home/background-home-mobile.jpg');
+    background-image: url('../images/home/background-home-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -98,7 +98,7 @@
 /* Tablet */
 @media screen and (min-width: 768px) {
     .space-section {
-        background-image: url('/assets/images/home/background-home-tablet.jpg');
+        background-image: url('../images/home/background-home-tablet.jpg');
     }
 
     .space-text p:nth-child(1) {
@@ -130,7 +130,7 @@
 /* Desktop */
 @media screen and (min-width: 1025px) {
     .space-section {
-        background-image: url('/assets/images/home/background-home-desktop.jpg');
+        background-image: url('../images/home/background-home-desktop.jpg');
     }
 
     .space-text-container {

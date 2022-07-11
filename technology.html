@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Station</title>
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -51,12 +52,12 @@
     <!-- Navigation -->
     <nav>
         <div class="logo">
-            <img src="/assets/images/shared/logo.svg" alt="Space Station Logo" width="48" height="48">
+            <img src="assets/images/shared/logo.svg" alt="Space Station Logo" width="48" height="48">
         </div>
 
         <!-- Mobile Menu Toggle -->
         <div id="menuToggle" class="menu-toggle">
-            <img id="menuImage" src="/assets/images/shared/icon-hamburger.svg" alt="Close Menu Icon" width="20" height="21">
+            <img id="menuImage" src="assets/images/shared/icon-hamburger.svg" alt="Close Menu Icon" width="20" height="21">
         </div>
 
         <!-- Rectangle -->
@@ -74,39 +75,35 @@
     </nav>
 
     <!-- Main Section -->
-<main>
-    <section class="tech-section"> 
-        <h1 class="main-title"><span>03</span> Space Launch 101</h1>
-        <!-- Tech Container -->
-        <div class="tech-container">
-            <div class="tech-grid">    
-                
-                <!-- Tech Item Image -->
-                <div class="tech-img">
-                    <picture id="techImage">
-                        <source id="source-desk" media="(min-width: 1025px)" width="515" height="527">
-                        <img id="source-mobile" width="375" height="170">
-                    </picture>
+    <main>
+        <section class="tech-section"> 
+            <h1 class="main-title"><span>03</span> Space Launch 101</h1>
+            <!-- Tech Container -->
+            <div class="tech-container">
+                <div class="tech-grid">    
+                    <!-- Tech Item Image -->
+                    <div class="tech-img">
+                        <picture id="techImage">
+                            <source id="source-desk" media="(min-width: 1025px)" width="515" height="527">
+                            <img id="source-mobile" width="375" height="170">
+                        </picture>
+                    </div>
+                    <!-- Slider Dots -->
+                    <div id="techDots" class="tech-dots">
+                        <button id="dot1" data-tab="1" class="dot dot1">1</button>
+                        <button id="dot2" data-tab="2" class="dot dot2">2</button>
+                        <button id="dot3" data-tab="3" class="dot dot3">3</button>
+                    </div>
+                    <!-- Tech Text Box -->
+                    <div class="tech-text-box">                    
+                        <h3 class="tech-terminology">The Terminology</h3>
+                        <h4 id="techName" class="tech-name"></h4>
+                        <p id="techText" class="tech-text"></p>
+                    </div>            
                 </div>
-
-                <!-- Slider Dots -->
-                <div id="techDots" class="tech-dots">
-                    <button id="dot1" data-tab="1" class="dot dot1">1</button>
-                    <button id="dot2" data-tab="2" class="dot dot2">2</button>
-                    <button id="dot3" data-tab="3" class="dot dot3">3</button>
-                </div>
-
-                <!-- Tech Text Box -->
-                <div class="tech-text-box">                    
-                    <h3 class="tech-terminology">The Terminology</h3>
-                    <h4 id="techName" class="tech-name"></h4>
-                    <p id="techText" class="tech-text"></p>
-                </div>            
-
-            </div>
-        </div>  
-    </section>
-</main>
+            </div>  
+        </section>
+    </main>
     <!-- Scripts -->
     <script src="main.js"></script>
     <script src="assets/js/technology.js"></script>

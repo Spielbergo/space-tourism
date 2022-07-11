@@ -7,7 +7,7 @@ button {
     width: 100%;
     height: 100vh;
     color: var(--white);
-    background-image: url('/assets/images/technology/background-technology-mobile.jpg');
+    background-image: url('../images/technology/background-technology-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -46,6 +46,8 @@ button {
         "image"
         "dots"
         "text";
+    position: relative;
+    top: 50px;
     height: 80vh;
     text-align: center;
 }
@@ -53,16 +55,18 @@ button {
 .tech-dots {
     display: flex;
     justify-content: center;
+    height: 50px;
 }
 
 .dot {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     color: var(--white);
     background-color: transparent;
     border: 1px solid var(--white25);
-    margin: 20px 10px;
+    margin: 20px 15px;
+    font-size: 22px;
 }
 
 .dot:hover {
@@ -126,12 +130,16 @@ button {
 /* Tablet */
 @media screen and (min-width: 768px) {
     .tech-section {
-        background-image: url('/assets/images/technology/background-technology-tablet.jpg');
+        background-image: url('../images/technology/background-technology-tablet.jpg');
     }
 
     .tech-container {
         justify-content: flex-end;
         height: 98%;
+    }
+
+    .tech-dots {
+        height: 100%;
     }
 
     .dot {
@@ -159,7 +167,7 @@ button {
 /* Desktop */
 @media screen and (min-width: 1025px) {
     .tech-section {
-        background-image: url('/assets/images/technology/background-technology-desktop.jpg');
+        background-image: url('../images/technology/background-technology-desktop.jpg');
         background-position-y: -200px;
     }   
 
