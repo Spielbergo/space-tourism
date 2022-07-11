@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Station</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Barlow:wght@300;400;500&family=Bellefair&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/crew.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="/assets/images/shared/logo.svg" alt="Space Station Logo">
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div id="menuToggle" class="menu-toggle">
+            <img id="menuImage" src="/assets/images/shared/icon-hamburger.svg" alt="Close Menu Icon">
+        </div>
+
+        <!-- Rectangle -->
+        <div class="rectangle"></div>
+
+        <!-- Navigation -->
+        <div class="main-nav-container">
+            <div id="mainNav" class="main-nav">
+                <div><a href="index.html"><span class="nav-numbers">00</span> Home</a></div>
+                <div><a href="destination.html"><span class="nav-numbers">01</span> Destination</a></div>
+                <div class="active"><a href="crew.html"><span class="nav-numbers">02</span> Crew</a></div>
+                <div><a href="technology.html"><span class="nav-numbers">03</span> Technology</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="crew-section"> 
+        <!-- Main Title -->
+        <h1 class="main-title"><span>02</span> Meet Your crew</h1>
+        <!-- Crew Container -->
+        <div class="crew-container">
+            <div class="crew-grid">    
+                <!-- Crew Member Image -->
+                <div class="crew-img">
+                    <img id="crewImage">
+                    <div class="crew-hr"></div>
+                </div>
+                <!-- Slider Dots -->
+                <div id="crewDots" class="crew-dots">
+                    <button id="dot1" data-tab="1" class="dot dot1"></button>
+                    <button id="dot2" data-tab="2" class="dot dot2"></button>
+                    <button id="dot3" data-tab="3" class="dot dot3"></button>
+                    <button id="dot4" data-tab="4" class="dot dot4"></button>
+                </div>
+                <!-- Crew Text Box -->
+                <div class="crew-text-box">                    
+                    <h3 id="crewPosition" class="crew-position"></h3>
+                    <h4 id="crewName" class="crew-name"></h4>
+                    <p id="crewText" class="crew-text"></p>
+                </div>            
+            </div>
+        </div>
+        
+    </section>
+    <script src="main.js"></script>
+    <script src="assets/js/crew.js"></script>
+</body>
+</html>

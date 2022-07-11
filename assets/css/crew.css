@@ -1,0 +1,217 @@
+/* ==== CREW PAGE ==== */
+button {
+    cursor: pointer;
+}
+
+.crew-section { 
+    width: 100%;
+    height: 100vh;
+    color: var(--white);
+    background-image: url('/assets/images/crew/background-crew-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase; 
+}
+
+.crew-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.crew-img {
+    grid-area: image;
+}
+
+.crew-dots {
+    grid-area: dots;
+}
+
+.crew-text-box {
+    grid-area: text;
+}
+
+.crew-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "title"
+        "image"
+        "dots"
+        "text";
+    height: 65vh;
+    text-align: center;
+}
+
+.crew-dots {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    height: 20px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: var(--white);
+    mix-blend-mode: normal;
+    opacity: 0.17;
+    border-radius: 50%;
+}
+
+.crew-dots .active {
+    opacity: 1;
+}
+
+.crew-img {
+    line-height: 0;
+}
+
+.crew-hr {
+    background: hsla(231, 15%, 26%, 1);
+    width: 327px;
+    height: 1px;
+    margin:  0 auto;
+}
+
+.crew-position {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.crew-name {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 15px;
+}
+
+.crew-text {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: none;
+    padding: 0 25px;
+    color: var(--grey);
+}
+
+/* ==== MEDIA QUERIES ==== */
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .crew-section {
+        background-image: url('/assets/images/crew/background-crew-tablet.jpg');
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .crew-section {
+        background-image: url('/assets/images/crew/background-crew-desktop.jpg');
+        background-position-y: -200px;
+    }
+
+    .crew-title {     
+        margin: 0;
+        text-align: left;
+        font-size: 28px;
+        padding: 50px 0px;
+    }
+
+    .crew-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1.5fr 1fr;
+        grid-column-gap: 200px;
+        align-items: end;
+        height: 100vh;
+        margin: auto;
+    }
+    
+    .crew-text-box {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-column-end: 2;
+        grid-row-end: 3;
+        width: 650px;
+    }
+
+    .crew-hr {
+        display: none;
+    }
+
+    .crew-position {
+        font-size: 50px;
+        line-height: 54px;
+        opacity: .25;
+        text-align: left;
+    }
+
+    .crew-name {
+        font-size: 56px;
+        line-height: 64px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .crew-text {
+        text-align: left;
+        width: 450px;
+        padding: 0;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .crew-dots {        
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-column-end: 2;
+        grid-row-end: 4;
+        justify-content: left;
+        align-self: center;
+        text-align: left;
+        width: 50%;
+    }
+
+    .dot {
+        width: 25px;
+        height: 25px;
+        margin-right: 25px;
+    }
+
+    .crew-img {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-column-end: 3;
+        grid-row-end: 4;
+    }
+
+    .crew-img img {
+        width: auto;
+        height: 712px;
+    }
+
+}
+
+/* @media screen and (min-width: 629px) and (max-width: 1023px) {
+    .crew-grid {
+        grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
+    }
+} */

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Station</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Barlow:wght@300;400;500&family=Bellefair&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/technology.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="/assets/images/shared/logo.svg" alt="Space Station Logo">
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div id="menuToggle" class="menu-toggle">
+            <img id="menuImage" src="/assets/images/shared/icon-hamburger.svg" alt="Close Menu Icon">
+        </div>
+
+        <!-- Rectangle -->
+        <div class="rectangle"></div>
+
+        <!-- Navigation -->
+        <div class="main-nav-container">
+            <div id="mainNav" class="main-nav">
+                <div><a href="index.html"><span class="nav-numbers">00</span> Home</a></div>
+                <div><a href="destination.html"><span class="nav-numbers">01</span> Destination</a></div>
+                <div><a href="crew.html"><span class="nav-numbers">02</span> Crew</a></div>
+                <div class="active"><a href="technology.html"><span class="nav-numbers">03</span> Technology</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="tech-section"> 
+        <h1 class="main-title"><span>03</span> Space Launch 101</h1>
+        <!-- Tech Container -->
+        <div class="tech-container">
+            <div class="tech-grid">    
+                
+                <!-- Tech Item Image -->
+                <div class="tech-img">
+                    <picture id="techImage">
+                        <source id="source-desk" media="(min-width: 1025px)" width="515" height="527">
+                        <img id="source-mobile" width="375" height="170">
+                    </picture>
+                </div>
+
+                <!-- Slider Dots -->
+                <div id="techDots" class="tech-dots">
+                    <button id="dot1" data-tab="1" class="dot dot1">1</button>
+                    <button id="dot2" data-tab="2" class="dot dot2">2</button>
+                    <button id="dot3" data-tab="3" class="dot dot3">3</button>
+                </div>
+
+                <!-- Tech Text Box -->
+                <div class="tech-text-box">                    
+                    <h3 class="tech-terminology">The Terminology</h3>
+                    <h4 id="techName" class="tech-name"></h4>
+                    <p id="techText" class="tech-text"></p>
+                </div>            
+
+            </div>
+        </div>
+        
+    </section>
+    <script src="main.js"></script>
+    <script src="assets/js/technology.js"></script>
+</body>
+</html>

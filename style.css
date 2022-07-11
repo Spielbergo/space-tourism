@@ -1,0 +1,242 @@
+:root {
+    --black: hsl(230, 35%, 7%);
+    --purple: hsl(231, 77%, 90%);
+    --yellow: hsl(0,0%, 100%);
+    --grey: hsla(231, 79%, 90%, 1);
+    --darkgrey: hsla(231, 15%, 26%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --white25: hsla(0, 0%, 100%, .25);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: fadeEffect 1s; 
+}  
+
+@keyframes fadeEffect {
+    from {opacity: .75;}
+    to {opacity: 1;}
+}
+
+h1, h3, p, ul {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Navigation Start */
+nav {
+    position: absolute;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    font-family: 'Barlow Condensed';
+}
+
+.logo img {
+    position: relative;
+    left: 25px;
+}
+
+.menu-toggle {
+    position: absolute;
+    width: 24px;
+    height: 21px;
+    right: 25px;
+    z-index: 1000;
+}
+
+.rectangle {
+    display: none;
+    position: absolute;
+    width: 600px;
+    height: 1px;
+    left: 11%;
+    top: 50%;
+    background: var(--white);
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    z-index: 1000;
+}
+
+.main-nav-container {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.main-nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 254px;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-left: 50px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    overflow: hidden;
+    transition: all 400ms ease-in;
+}
+
+.main-nav div {
+    position: relative;
+    top: 200px;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    margin: 15px 0;    
+}
+
+.main-nav div span {
+    font-weight: 700;
+}
+
+.nav-closed {
+    transform: translate(100%);
+}
+
+.hide {
+    display: none;
+}
+
+.main-nav a {
+    color: var(--white)
+}
+
+.main-nav a:hover {
+    transition: all 300ms ease-in-out;
+}
+
+.active,
+.active:hover {
+    /* border-right: 2px solid var(--white); */
+}
+/* Navigation End */
+
+.main-title {
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+}
+
+/* ==== MEDIA QUERIES ==== */
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .rectangle {
+        display: block;
+    }
+    
+    .menu-toggle {
+        display: none;
+    } 
+
+    .nav-numbers {
+        display: inline-block;
+        font-weight: 700;
+    }
+
+    .main-nav-container {
+        position: relative;
+        color: var(--white);
+    }
+    
+    .main-nav  {
+        position: relative;
+        height: 96px;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 62%;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.3625px;
+        text-transform: uppercase;
+    }
+
+    .main-nav div {
+        top: 0;
+        border-right: none;
+    }
+
+    .main-nav a:hover {
+        border-right: none;
+        border-bottom: 1px solid var(--white25);
+        padding-bottom: 38px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .nav-closed {
+        transform: translate(0);
+    }
+    
+    .active a,
+    .active a:hover {
+        border-bottom: 2px solid var(--white);
+        padding-bottom: 38px;
+    }
+
+    .active:hover {
+        border-right: none;
+    }
+
+    /* -- Main Title */
+    .main-title {
+        position: absolute;
+        top: 15%;
+        font-size: 26px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .main-title span {
+        opacity: 25%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    nav {
+        top: 40px;
+    }
+
+    .logo img {
+        left: 55px;
+    }
+
+    .main-title {
+        width: 33%;
+        top: 20%;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,173 @@
+/* ==== HOME PAGE ==== */
+.space-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;  
+    background-image: url('/assets/images/home/background-home-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: Bellefair;
+    text-transform: uppercase;    
+}
+
+.space-text-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    position: relative;
+    top: 0;
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.explore-btn,
+.space-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    height: 100%;
+    max-width: 160ch;
+    margin: auto;
+    padding: 0 15px;
+    color: var(--grey);
+}
+
+/* Top Title */
+.space-text p:nth-child(1) {
+    font-family: 'Barlow Condensed';
+    font-size: 1rem;
+    letter-spacing: 3.725px;
+    padding-bottom: 0;
+    text-align: center;
+    /* width: 95%; */
+}
+
+/* Large Text */
+.space-text h1:nth-child(2) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7rem;
+    text-align: center;
+    color: var(--yellow);
+}
+
+/* Text */
+.space-text p:nth-child(3) {
+    max-width: 45ch;
+    font-family: Barlow;
+    font-size: 1.2rem;
+    line-height: 32px;
+    text-align: center;
+    text-transform: none;
+}
+
+.explore-btn a {
+    position: relative;
+    /* bottom: 50%;
+    right: 250px; */
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.explore-btn a:hover {
+    box-shadow: 0 0 0 65px rgba(0, 0, 0, 0.5);
+}
+
+.explore-btn-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 274px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--black);
+}
+
+/* ==== MEDIA QUERIES ==== */
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .space-section {
+        background-image: url('/assets/images/home/background-home-tablet.jpg');
+    }
+
+    .space-text p:nth-child(1) {
+        font-size: 1.5rem;
+        padding-bottom: 0;
+        text-align: center;
+        width: 95%;
+    }
+    .space-text h1:nth-child(2) {
+        font-size: 9rem;
+        text-align: center;
+    }
+
+    .space-text p:nth-child(3) {
+        text-align: center;
+    }
+
+    .explore-btn a {
+        width: 274px;
+        height: 274px;
+    }
+
+    .explore-btn-text {
+        height: 274px;
+        font-size: 32px;
+    }   
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .space-section {
+        background-image: url('/assets/images/home/background-home-desktop.jpg');
+    }
+
+    .space-text-container {
+        top: 150px
+    }
+
+    .space-text {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .space-text p:nth-child(1) {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .space-text h1:nth-child(2) {
+        font-size: 11rem;
+        text-align: left;
+    }
+
+    .space-text p:nth-child(3) {
+        text-align: left;
+    }
+    .explore-btn a {
+        width: 274px;
+        height: 274px;
+    }
+
+    .explore-btn-text {
+        height: 274px;
+        font-size: 32px;
+    }    
+}
+
+@media screen and (min-width: 629px) and (max-width: 1023px) {
+    .space-text-container {
+        grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
+    }
+}
