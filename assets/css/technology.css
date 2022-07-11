@@ -65,6 +65,10 @@ button {
     margin: 20px 10px;
 }
 
+.dot:hover {
+    background-color: var(--white25);
+}
+
 .tech-dots .active {
     color: var(--black);
     background-color: var(--white);
@@ -124,6 +128,32 @@ button {
     .tech-section {
         background-image: url('/assets/images/technology/background-technology-tablet.jpg');
     }
+
+    .tech-container {
+        justify-content: flex-end;
+        height: 98%;
+    }
+
+    .dot {
+        width: 90px;
+        height: 90px;
+        font-size: 40px;
+        margin: 20px;
+    }
+
+    .tech-terminology {
+        font-size: 45px;
+    }
+
+    .tech-text {
+        font-size: 30px;
+    }
+
+    .tech-text {
+        max-width: 600px;
+        margin: auto;
+        font-size: 19px;
+    }
 }
 
 /* Desktop */
@@ -132,6 +162,11 @@ button {
         background-image: url('/assets/images/technology/background-technology-desktop.jpg');
         background-position-y: -200px;
     }   
+
+    .tech-container {
+        justify-content: center;
+        height: 100%;
+    }
 
     .tech-grid {
         grid-template-columns: .75fr 1.5fr 1fr;
@@ -171,6 +206,7 @@ button {
         text-align: left;
         width: 450px;
         padding: 0;
+        margin: 5px;
         font-family: 'Barlow';
         font-style: normal;
         font-weight: 400;

@@ -19,15 +19,18 @@
     height: 320px;
     animation: spinloader 2s linear infinite;
 }
+
 .loader img{
     height : 320px;
     width : 320px;
     animation: spinlogo 2s linear infinite;
 }
+
 @keyframes spinloader {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
 @keyframes spinlogo {
     0% { transform: rotate(360deg); }
     100% { transform: rotate(0deg); }
@@ -36,10 +39,11 @@
 .loaded .loader {
     opacity: 0;
     transition: all 0.3s ease-out;
-  }
-  .loaded .loader-wrapper {
+}
+
+.loaded .loader-wrapper {
     visibility: hidden;
     transform:translateY(-100%);
     transition: all .3s 1s ease-out;
-  }
+}
 

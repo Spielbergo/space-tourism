@@ -25,7 +25,8 @@ tab1.classList.add("active");
 
 // Set Initial Text and Image
 planetTitle.textContent = 'Moon';
-planetImage.src = 'assets/images/destination/image-moon.png';
+planetImage.src = 'assets/images/destination/image-moon.webp';
+planetImage.alt = 'Moon'
 planetText.textContent = 'See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.';
 stats1.textContent = '384,400 KM';
 stats2.textContent = '3 Days'
@@ -34,7 +35,8 @@ stats2.textContent = '3 Days'
 // 1 - Moon
 tab1.addEventListener('click', () => {
   planetTitle.textContent = 'Moon';
-  planetImage.src = 'assets/images/destination/image-moon.png';
+  planetImage.src = 'assets/images/destination/image-moon.webp';
+  planetImage.alt = 'Moon'
   planetText.textContent = 'See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.';
   stats1.textContent = '384,400 KM';
   stats2.textContent = '3 Days';
@@ -43,7 +45,8 @@ tab1.addEventListener('click', () => {
 // 2 - Mars
 tab2.addEventListener('click', () => {
   planetTitle.textContent = 'Mars';
-  planetImage.src = 'assets/images/destination/image-mars.png';
+  planetImage.src = 'assets/images/destination/image-mars.webp';
+  planetImage.alt = 'Mars'
   planetText.textContent = 'Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!';
   stats1.textContent = '225 MIL. KM';
   stats2.textContent = '9 Months';
@@ -52,7 +55,8 @@ tab2.addEventListener('click', () => {
 // 3 - Europa
 tab3.addEventListener('click', () => {
   planetTitle.textContent = 'Europa';
-  planetImage.src = 'assets/images/destination/image-europa.png';
+  planetImage.src = 'assets/images/destination/image-europa.webp';
+  planetImage.alt = 'Europa'
   planetText.textContent = 'The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.';
   stats1.textContent = '628 MIL. KM';
   stats2.textContent = '3 Years';
@@ -61,7 +65,8 @@ tab3.addEventListener('click', () => {
 // 4 - Titan
 tab4.addEventListener('click', () => {
   planetTitle.textContent = 'Titan';
-  planetImage.src = 'assets/images/destination/image-titan.png';
+  planetImage.src = 'assets/images/destination/image-titan.webp';
+  planetImage.alt = 'Titan'
   planetText.src = 'The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.';
   stats1.textContent = '1.6 BIL. KM';
   stats2.textContent = '7 Years';

@@ -32,7 +32,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1400px;
     height: 100%;
     margin: auto;
 }
@@ -43,7 +43,8 @@ button {
     align-items: center;
     justify-items: center;
     position: relative;
-    max-width: 1200px;
+    top: 35px;
+    max-width: 1400px;
     text-align: center;
     padding-top: 25px;
     padding: 25px 20px 0;
@@ -77,6 +78,10 @@ button {
     border-bottom: 2px solid var(--white);
     border-radius: 1px;
     border-right: none;
+}
+
+.tab:hover {
+    border-bottom: 2px solid var(--white25);
 }
 
 /* Large Text */
@@ -140,13 +145,25 @@ button {
         background-image: url('/assets/images/destination/background-destination-tablet.jpg');
     }
 
+    .destination-img img {
+        width: 85%;
+        height: auto;
+    }
+
+    .destination-tabs button {
+        margin: 10px 20px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
     .destination-text h3:nth-child(2) {
-        font-size: 1.5rem;
+        font-size: 50px;
         padding-bottom: 0;
         text-align: center;
-        width: 95%;
     }
+
     .destination-text p:nth-child(3) {
+        font-size: 19px;
         text-align: center;
     }
 }
@@ -169,11 +186,10 @@ button {
 
     .destination-tabs  {
         justify-content: flex-start;
-    }
+    }    
 
     .destination-tabs button {
-        font-size: 20px;
-        line-height: 24px;
+        margin-left: 0;
     }
 
     .destination-text {
@@ -182,6 +198,8 @@ button {
     }
 
     .destination-text h3:nth-child(2) {
+        position: relative;
+        right: 10px;
         font-size: 100px;
         text-align: left;
     }
