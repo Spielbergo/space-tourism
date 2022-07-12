@@ -20,7 +20,7 @@ body {
     to {opacity: 1;}
 }
 
-h1, h3, p, ul {
+h1, h2, h3, p, ul {
     margin: 0;
 }
 
@@ -121,9 +121,10 @@ nav {
 }
 /* Navigation End */
 
+/* Main onpage title */
 .main-title {
     position: absolute;
-    top: 10%;
+    top: 13%;
     text-align: center;
     font-size: 18px;
     width: 100%;

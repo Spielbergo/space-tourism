@@ -31,7 +31,6 @@ crewImage.width = "177.12";
 crewImage.height = '222';
 crewText.textContent = 'Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.';
 
-
 // Dots
 // 1 - Commander Hurley
 dot1.addEventListener('click', () => {

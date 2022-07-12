@@ -46,8 +46,6 @@ button {
         "image"
         "dots"
         "text";
-    position: relative;
-    top: 50px;
     height: 80vh;
     text-align: center;
 }
@@ -181,6 +179,8 @@ button {
         grid-template-rows: 1fr 1.5fr 1fr;
         justify-items: center;
         align-items: center;
+        position: relative;
+        top: 5%;
         height: 100vh;
     }
     

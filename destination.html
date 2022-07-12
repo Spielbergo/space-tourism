@@ -65,7 +65,7 @@
 
         <!-- Navigation -->
         <div class="main-nav-container">
-            <div id="mainNav" class="main-nav">
+            <div id="mainNav" class="main-nav" role="navigation" aria-label="Main Nav">
                 <div><a href="index.html"><span class="nav-numbers">00</span> Home</a></div>
                 <div class="active"><a href="destination.html"><span class="nav-numbers">01</span> Destination</a></div>
                 <div><a href="crew.html"><span class="nav-numbers">02</span> Crew</a></div>
@@ -88,21 +88,21 @@
                     <!-- Destination Text Box -->
                     <div class="destination-text">
                         <div class="destination-tabs" id="destinationTabs">
-                            <button id="tab1" data-tab="1" class="tab">Moon</button>
-                            <button id="tab2" data-tab="2" class="tab">Mars</button>
-                            <button id="tab3" data-tab="3" class="tab">Europa</button>
-                            <button id="tab4" data-tab="4" class="tab">Titam</button>
+                            <button id="tab1" data-tab="1" class="tab" aria-label="Navigation Tab 1">Moon</button>
+                            <button id="tab2" data-tab="2" class="tab" aria-label="Navigation Tab 2">Mars</button>
+                            <button id="tab3" data-tab="3" class="tab" aria-label="Navigation Tab 3">Europa</button>
+                            <button id="tab4" data-tab="4" class="tab" aria-label="Navigation Tab 4">Titam</button>
                         </div>
-                        <h3 id="planetTitle"></h3>
+                        <h2 id="planetTitle"></h2>
                         <p id="planetText"></p>
                         <hr class="destination-hr">
                         <div class="destination-stats">
                             <div>
-                                <h4>Avg. Distance</h4>
+                                <h3>Avg. Distance</h3>
                                 <p id="stats1"></p>
                             </div>
                             <div>
-                                <h4>Est. Travel Time</h4>
+                                <h3>Est. Travel Time</h3>
                                 <p id="stats2"></p>
                             </div>
                         </div>
